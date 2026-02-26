@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #858585;
+    margin: 0;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    padding: 38px 100px;
+    left: 15rem;
+    align-items: flex-start;
+    /* Ensure content is above overlay */
+}
+
+.tag {
+    background-color: #252525;
+    border-bottom: 1px solid rgb(0, 41, 176);
+    width: fit-content;
+    /* Changed from 40% to fit-content for better sizing */
+    min-width: 150px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-wrapper,
+.right-wrapper {
+    /* background-color: #ffffff; */
+    /* border-bottom: 1px solid rgba(0, 71, 177, 0.873); */
+    width: 30%;
+    /* border-right: 1px solid #858585; */
+}
+
+.right-wrapper {
+    border-left: 1px solid #858585;
+}
+
+.left-wrapper {
+    /* border-right: 1px solid #858585; */
+    width: 30%;
+}
+
+.tag h1 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 0;
+    /* Removed margin-bottom to avoid shifting */
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+.paragraph-container {
+    /* background-color: #1a1a1a; */
+    /* border: 1px solid #333; */
+    padding: 20px;
+    /* border-radius: 4px; */
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.paragraph-container p {
+    font-family: 'IBM Plex Mono', monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #858585;
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* opacity: 0.1; */
+    z-index: 1;
+    margin-top: 36px;
+}
+
+.overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navpng {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.navpng img {
+    width: 100%;
+    height: fit-content;
+}
+
+.button {
+    position: fixed;
+    bottom: 43%;
+    left: 96%;
+    width: 3.5rem;
+    height: 3.5rem;
+    /* Set a specific height */
+    z-index: 3;
+    /* background-color: #ffffff; */
+    border-radius: 12px;
+}
+
+.button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-decoration: none;
+}
+
+
+.button .textconatainer h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+
+
+    /* margin: 0; */
+    /* Removed margin-bottom to avoid shifting */
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+.button .textconatainer {
+    position: fixed;
+    display: flex;
+    width: 11rem;
+    margin-bottom: 5rem;
+    right: 6rem;
+}

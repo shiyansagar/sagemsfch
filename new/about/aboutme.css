@@ -1,0 +1,394 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #151515;
+    padding: 0px 30px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav .back a {
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #151515;
+    transition: color 0.2s ease;
+}
+
+.nav .back a:hover {
+    color: #717171;
+    /* text-decoration: underline; */
+}
+
+/* .nav .logo img {
+    width: 50px;
+    height: 50px;
+} */
+
+.nav .nav-bar {
+    display: flex;
+    gap: 30px;
+}
+
+.nav .nav-bar a {
+    text-decoration: none;
+    color: #151515;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.nav .nav-bar a:hover {
+    color: #8b8b8b;
+    text-decoration: underline;
+    transform: translateY(-4px);
+}
+
+.photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -10px;
+    left: 45%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.photo img {
+    width: 400px;
+    height: 400px;
+}
+
+.skate h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #151515;
+    transition: color 0.2s ease;
+    /* bottom: 100px; */
+    position: absolute;
+    z-index: 1000;
+    top: -0.5rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 250px;
+}
+
+.text h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #151515;
+    transition: color 0.2s ease;
+}
+
+.text p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #151515;
+    transition: color 0.2s ease;
+    width: 50%;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+    margin-top: 250px;
+    position: relative;
+    z-index: -1;
+}
+
+.name h1 {
+    position: absolute;
+    font-size: 70vh;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.name h1 {
+    margin-top: -80px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+        0px 10px 20px rgba(172, 172, 172, 0.1),
+        0px 20px 40px rgba(129, 129, 129, 0.1);
+
+}
+
+.name .s {
+    margin-bottom: 100px;
+    left: 2%;
+}
+
+.name .a:nth-of-type(2) {
+    left: 18%;
+}
+
+.name .g {
+    margin-top: 10px;
+    left: 35%;
+    z-index: -1;
+}
+
+.name .a:nth-of-type(4) {
+    left: 55%;
+}
+
+.name .r {
+    margin-bottom: 100px;
+    left: 75%;
+}
+
+/* Neomorphic Style for MyBad */
+.mybad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30vh;
+    width: 100%;
+    min-height: 80vh;
+    padding: 60px 40px;
+
+    /* Base color for neomorphism (Glassy/Pinkish base) */
+    background: rgba(255, 255, 255, 0.544);
+    /* border-radius: 50px;
+    /* Soft Neomorphic Shadows */
+    /* box-shadow:
+        20px 20px 60px rgba(0, 0, 0, 0.2),
+        -20px -20px 60px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2); */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.mybad h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #444444;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.mybad .number {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Neomorphic Concave/Extruded mix */
+    background: rgb(255, 255, 255);
+    box-shadow:
+        inset 3px 3px 10px rgb(238, 238, 238),
+        inset -3px -3px 10px rgb(243, 243, 243);
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.mybad .number h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #161616;
+    margin: 0;
+}
+
+.mybad input {
+    background: transparent;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: #232323;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    /* Deep Inset Neomorphic Shadow for Input */
+    box-shadow:
+        inset 3px 3px 6px rgb(239, 239, 239),
+        inset -3px -3px 6px rgb(229, 229, 229);
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.mybad input:focus {
+    box-shadow:
+        inset 3px 3px 6px rgb(242, 242, 242),
+        inset -3px -3px 6px rgb(237, 237, 237);
+}
+
+.mybad input::placeholder {
+    color: rgba(67, 67, 67, 0.7);
+}
+
+.mybad button {
+    margin-top: 20px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: none;
+    /* Neomorphic Extruded Button */
+    /* background: linear-gradient(145deg, #b8b0dc, #93eff3);
+     */
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow:
+        4px 4px 8px rgba(252, 252, 252, 0.836),
+        -4px -4px 8px rgba(255, 255, 255, 0.747);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.mybad button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        10px 10px 20px rgba(0, 0, 0, 0.25),
+        -10px -10px 20px rgba(255, 255, 255, 0.25);
+}
+
+.mybad button:active {
+    transform: translateY(2px);
+    /* Pressed effect */
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.mybad img {
+    border-radius: 50%;
+    /* Create a 'socket' look for the image */
+    box-shadow:
+        5px 5px 15px rgba(0, 0, 0, 0.2),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mybad img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 0px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-content .bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-content .right .email {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.footer-content .right .email p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #151515;
+    transition: color 0.2s ease;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 6px;
+
+}
+
+.footer-content .right .email input {
+    border: 1px solid #000000;
+    padding: 6px 10px;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 0.8rem;
+    width: 40%;
+    max-width: 400px;
+    outline: none;
+    /* box-shadow: 0 0 10px rgba(255, 0, 222, 0.2); */
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.footer-content .right .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+    margin-top: 10px;
+    /* margin-left: -30rem;
+    left: 50rem; */
+    /* Add spacing below input */
+}
+
+.footer-content .right .contact p {
+    text-align: left;
+    margin: 0;
+}

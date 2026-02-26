@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Army Enlistment Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ENLIST NOW</h1>
+            <p>Join the ranks. Serve with honor.</p>
+        </div>
+        <form action="#">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Shukur sundaran" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="18-35" required min="18" max="35">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Preferred Branch</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled selected>Select Branch</option>
+                    <option value="infantry">Infantry</option>
+                    <option value="armor">Armor</option>
+                    <option value="aviation">Aviation</option>
+                    <option value="medical">Medical Corps</option>
+                    <option value="intelligence">Military Intelligence</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason for Enlisting</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Briefly explain why you want to join..."
+                    required></textarea>
+            </div>
+
+            <!-- Direct link for navigation -->
+            <a href="mainpage.html" style="text-decoration: none; display: block; width: 100%;">
+                <button type="button">SUBMIT APPLICATION</button>
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+/* Import pixelated retro font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background: #0aacbb;
+    /* Classic teal Windows background */
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Retro desktop pattern */
+    background-image: linear-gradient(45deg, #007070 25%, transparent 25%),
+        linear-gradient(-45deg, #007070 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #007070 75%),
+        linear-gradient(-45deg, transparent 75%, #007070 75%);
+    background-size: 4px 4px;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1 0px;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 8rem;
+    font-style: italic;
+    background: linear-gradient(180deg, #ffff00 0%, #ffcc00 50%, #ffff00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main window container - Windows 95 style */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #c0c0c0;
+    border: 3px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow:
+        inset 1px 1px 0 #dfdfdf,
+        inset -1px -1px 0 #808080,
+        4px 4px 0 rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    padding: 10PX 10px;
+}
+
+/* Header cells - Yellow title bar style */
+th {
+    background: linear-gradient(180deg, #ffff00 0%, #cccc00 50%, #ffff00 100%);
+    color: #000080;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    padding: 12px 8px;
+    text-align: center;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    text-shadow: 1px 1px 0 #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+}
+
+/* Special lunch column styling */
+th[rowspan] {
+    background: linear-gradient(180deg, #ff6b6b 0%, #cc5555 50%, #ff6b6b 100%);
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #800000;
+    writing-mode: horizontal-tb;
+    font-size: 10px;
+    padding: 15px 10px;
+}
+
+/* Data cells - Blue background retro style */
+td {
+    background: #000080;
+    color: #00ffff;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    padding: 15px 12px;
+    text-align: center;
+    border: 2px solid;
+    border-color: #808080 #ffffff #ffffff #808080;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+
+/* Day column - special styling */
+td:first-child {
+    background: linear-gradient(180deg, #c0c0c0 0%, #a0a0a0 100%);
+    color: #000080;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    font-weight: bold;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    min-width: 120px;
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) td {
+    background: #000060;
+}
+
+tr:nth-child(even) td:first-child {
+    background: linear-gradient(180deg, #b0b0b0 0%, #909090 100%);
+}
+
+/* Hover effect - retro highlight */
+tr:hover td {
+    background: #0000aa;
+    color: #ffff00;
+    cursor: pointer;
+}
+
+tr:hover td:first-child {
+    background: #ffff00;
+    color: #000080;
+}
+
+/* Subject names styling */
+td br {
+    display: block;
+    content: "";
+    margin: 4px 0;
+}
+
+/* Bento box grid effect with inner shadows */
+td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* Add scanlines effect for extra retro feel */
+table::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Window title bar effect at top */
+/* Window title bar effect at top */
+table::before {
+    content: '📅 Weekly Timetable - Schedule.exe \00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0 ▢ ▣ ✕';
+    display: block;
+    position: absolute;
+    top: -28px;
+    left: -3px;
+    right: -3px;
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 8px 10px;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    white-space: pre;
+    overflow: hidden;
+}
+
+/* Make table position relative for pseudo-elements */
+table {
+    position: relative;
+    margin-top: 35px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th {
+        font-size: 7px;
+        padding: 8px 4px;
+    }
+
+    td {
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+
+    td:first-child {
+        font-size: 8px;
+    }
+}
+
+/* Pixel perfect borders for bento effect */
+tr {
+    position: relative;
+}
+
+/* Additional retro touches */
+th:first-child {
+    background: linear-gradient(180deg, #90ee90 0%, #228b22 50%, #90ee90 100%);
+    color: #000000;
+}
+
+/* Mentoring column special style */
+td:last-child:not(:first-child) {
+    background: #800080;
+    color: #ffccff;
+}
+
+tr:nth-child(even) td:last-child:not(:first-child) {
+    background: #600060;
+}
+
+tr:hover td:last-child:not(:first-child) {
+    background: #aa00aa;
+    color: #ffffff;
+}
+
+.button {
+    /* position: absolute;  <-- Removed to let it flow */
+    /* top: 20px; */
+    /* left: 20px; */
+    margin-bottom: 20px;
+    /* Add spacing below button */
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    background-color: #c0c0c0;
+    color: #000000;
+    padding: 12px 16px;
+    /* border-radius: 100%; */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    box-shadow: 1px 1px 0 #000;
+    height: 40%;
+    cursor: pointer;
+    z-index: 100;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* Ensure strict sizing */
+}
+
+.button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+    transform: translate(1px, 1px);
+}
+
+.button button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}

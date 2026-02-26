@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURA MEME - LEGENDARY</title>
+    <link rel="stylesheet" href="sura.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="nav">
+        <div class="back">
+            <a href="../mainpage.html">
+                <div class="sage-logo">
+                    <div class="s-top">←</div>
+                    <div class="s-bottom">SAGE</div>
+                </div>
+            </a>
+        </div>
+        <div class="marquee-top">
+            <div class="marquee-content">
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+            </div>
+            <div class="marquee-content">
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+            </div>
+            <div class="marquee-content">
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+                <span>SURA MEME</span>
+                <span>LEGENDARY</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="hero">
+            <h1 class="glitch" data-text="SURA">SURA</h1>
+            <div class="hero-img">
+                <!-- Using a placeholder for the legend himself -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlmy1E7D76JZrbFbv4f5jn7pi0ppG2RgkVA&s"
+                    alt="Sura Meme Pose">
+                <div class="caption">"THE LEGEND NEVER DIES"</div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat"><span>DUMBNESS:</span> 100%</div>
+            <div class="stat"><span>SWAG:</span> MAX</div>
+            <div class="stat"><span>PHYSICS:</span> IGNORED</div>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-item tall">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAwDARpTQEtH4bQu7Gpp3FCvgGojZU20SqA&s"
+                    alt="Funny Moment">
+                <div class="label">ENERGY LEVEL: 9000</div>
+            </div>
+            <div class="bento-item wide">
+                <h2>BORN TO BE DUMB, FORCED TO BE SURA</h2>
+                <p>When the cinematic energy peaks but the logic hits 0%.</p>
+            </div>
+            <div class="bento-item">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTZjMDliOTUydDIyemY3ZGhpYTA0ajIzNDN6eHI4c3FiemgxdHFuaG45cDVpbnR5eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/901mxGLGQN2PyCQpoc/200w.gif"
+                    alt="Sura Dance">
+                <div class="label">PEAK DANCE</div>
+            </div>
+            <div class="bento-item">
+                <div class="quote">
+                    "I DON'T NEED LOGIC, I HAVE PHYSICS-DEFYING STYLE."
+                </div>
+            </div>
+            <div class="bento-item large">
+                <img src="https://www.thisiscolossal.com/wp-content/uploads/2014/03/120430.gif" alt="Crazy Animation">
+                <div class="label">SURA VIBES ONLY</div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer-marquee">
+        <div class="marquee-content reverse">
+            <span>DONT BE DUMB</span>
+            <span>BE SURA</span>
+            <span>DONT BE DUMB</span>
+            <span>BE SURA</span>
+            <span>DONT BE DUMB</span>
+            <span>BE SURA</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script>
+        gsap.to(".marquee-content", {
+            xPercent: -50,
+            repeat: -1,
+            duration: 10,
+            ease: "none"
+        });
+
+        gsap.to(".reverse", {
+            xPercent: 50,
+            repeat: -1,
+            duration: 10,
+            ease: "none"
+        });
+    </script>
+</body>
+
+</html>
